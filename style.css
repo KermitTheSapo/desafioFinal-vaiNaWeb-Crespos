@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*
+
+font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif;
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 87px;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #9767A9;
+}
+.menu {
+    display: none;
+}
+header ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+
+header ul li{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 10%;
+    font-size: 18px;
+}
+.li-dicas {
+    width: 5%;
+}
+.li-cronograma {
+    width: 18%;
+}
+.li-produtos {
+    width: 7%;
+}
+.li-cadastro {
+    width: 11%;
+}
+.li-contato {
+    width: 7%;
+}
+
+header ul li:hover {
+    font-weight: bolder;
+}
+
+header input {
+    border: #9767A9 solid;
+    border-radius: 20px;
+    height: 35px;
+}
+header input::placeholder {
+    color: #9767A9;
+}
+
+.redes-sociais {    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 8%;
+}
+
+@media (max-width:2560px) {
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+    .logo img {
+        width: 172px;
+        height: 85px;
+    }
+    header ul li {
+        font-size: 30px;
+    }
+    .li-dicas {
+        width: 7%;
+    }
+    .li-cronograma {
+        width: 26%;
+    }
+    .li-referencia {
+        width: 15%;
+    }
+    .li-produtos {
+        width: 12%;
+    }
+    .li-cadastro {
+        width: 16%;
+    }
+    .li-contato {
+        width: 10%;
+    }
+    header input {
+        height: 50px;
+        width: 250px;
+        font-size: 25px;
+    }
+    .redes-sociais img {
+        height: 80px;
+        width: 60px;
+    }
+}
+
+@media (max-width: 1920px) {
+    header ul {
+        border: solid green;
+        width: 60%;
+    }
+    header ul li {
+        border: solid blue;
+    }
+    .li-dicas {
+        width: 9%;
+    }
+    .li-cronograma {
+        width: 34%;
+    }
+    .li-referencia {
+        width: 19%;
+    }
+    .li-produtos {
+        width: 16%;
+    }
+    .li-cadastro {
+        width: 27%;
+    }
+    .li-contato {
+        width: 14%;
+    }
+}
+
+@media (max-width:1440px){
+    header {
+        width: 100%;
+    }
+    .logo img {
+        width: 138px;
+        height: 68px;
+    }
+    header ul li {
+        font-size: 20px;
+    }
+    header ul {
+        width: 55%;
+    }
+    .li-dicas {
+        width: 9%;
+    }
+    .li-cronograma {
+        width: 31%;
+    }
+    .li-referencia {
+        width: 17%;
+    }
+    .li-produtos {
+        width: 15%;
+    }
+    .li-cadastro {
+        width: 21%;
+    }
+    .li-contato {
+        width: 12%;
+    }
+    .redes-sociais {
+        width: 10%;
+    }
+    header input {
+        width: 150px;
+    }
+    .redes-sociais img {
+        height: 60px;
+        width: 40px;
+    }
+}
+@media (max-width:1060px) {
+    header ul li {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:1024px) {
+    header ul li {
+        font-size: 14px;
+    }
+    header input {
+        width: 110px;
+        font-size: 15px;
+        height: 40px;
+    }
+    .redes-sociais {
+        width: 12%;
+    }
+    .redes-sociais img {
+        height: 50px;
+        width: 30px;
+    }
+    .logo img {
+        width: 111px;
+        height: 55px;
+    }
+}
+@media (max-width:910px) {
+    .logo img {
+        width: 81px;
+        height: 40px;
+    }
+    header ul {
+        width: 60%;
+    }
+    header ul li {
+        font-size: 12px;
+        border: solid;
+    }
+    header input {
+        width: 100px;
+    }
+    .li-dicas {
+        width: 9%;
+    }
+    .li-cronograma {
+        width: 32%;
+    }
+    .li-referencia {
+        width: 19%;
+    }
+    .li-produtos {
+        width: 15%;
+    }
+    .li-cadastro {
+        width: 21%;
+    }
+    .li-contato {
+        width: 12%;
+    }
+    .redes-sociais {
+        width: 15%;
+        border: solid;
+    }
+}
+@media (max-width:768px) {
+    header {    
+        justify-content: space-between;
+        height: 60px;
+    }
+    .menu {
+        height: 60px;
+        display: flex;
+    }
+    .logo {
+        width: 92%;
+        display: flex;
+        justify-content: center;
+    }
+    header ul {
+        display: none;
+    }
+    header input {
+        display: none;
+    }
+    .redes-sociais {
+        display: none;
+    }
+}
+
+@media (max-width:425px) {
+    header {
+        justify-content: space-between;
+        height: 60px;
+    }
+    header ul {
+        display: none;
+    }
+    header input{
+        display: none;
+    }
+    .redes-sociais {
+        display: none;
+    }
+    .logo {
+        width: 85%;
+        display: flex;
+        justify-content: center;
+    }
+    .menu {
+        display:flex;
+        height: 60px;
+    }
+}
