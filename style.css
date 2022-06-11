@@ -9,6 +9,7 @@ font-family: 'Playfair Display', serif;
 
 * {
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 a {
@@ -30,6 +31,12 @@ header ul {
     display: flex;
     justify-content: space-evenly;
     width: 50%;
+}
+
+.logo img {
+    -webkit-user-drag: none;
+    pointer-events: none;
+    /* -ms-user-select: none; */
 }
 
 
@@ -66,6 +73,10 @@ header input {
     border: #9767A9 solid;
     border-radius: 20px;
     height: 35px;
+    background-image: url('assets/header/menu-busca.svg');
+    background-repeat: no-repeat;
+    background-position: 8px;
+    text-align: center;
 }
 header input::placeholder {
     color: #9767A9;
@@ -78,14 +89,54 @@ header input::placeholder {
     width: 8%;
 }
 
+.redes-sociais img {
+    pointer-events: none;
+    -webkit-user-drag: none;
+}
+
+.dicas {
+    background-image: url("assets/main/dicas-e-truques/cabeludo.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%; 
+    height: 81.4vh;
+    display: flex;
+}
+
+.dicas-crespos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    color: white;
+    margin-top: 200px;
+}
+
+h1 {
+    font-size: 4.6vw;
+    width: 16.40vw;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+}
+ 
+.dicas-crespos h2 {
+    font-size: 2.3vw;
+    width: 28.12vw;
+    font-weight: 200;
+}
+
 @media (max-width:2560px) {
     .logo {
         display: flex;
         align-items: center;
     }
     .logo img {
-        width: 172px;
-        height: 85px;
+        width: 8.05vw;
+        height: 8.14vh;
+    }
+    header {
+        height: 11.5vh;
     }
     header ul li {
         font-size: 30px;
@@ -109,23 +160,61 @@ header input::placeholder {
         width: 10%;
     }
     header input {
-        height: 50px;
-        width: 250px;
+        height: 4.7vh;
+        width: 11.7vw;
         font-size: 25px;
     }
+    .redes-sociais {
+        width: 10%;
+    }
     .redes-sociais img {
-        height: 80px;
-        width: 60px;
+        height: 7.6vh;
+        width: 2.8vw;
+    }
+}
+
+@media (max-width:2400px){
+    .li-dicas {
+        width: 9%;
+    }
+    .li-cronograma {
+        width: 30%;
+    }
+    .li-referencia {
+        width: 18%;
+    }
+    .li-produtos {
+        width: 12%;
+    }
+    .li-cadastro {
+        width: 20%;
+    }
+    .li-contato {
+        width: 12%;
+    }
+    header ul {
+        width: 60%;
+    }
+}
+
+@media (max-width:2200px){
+    .li-cronograma {
+        width: 35%;
+    }
+    .li-referencia {
+        width: 20%;
+    }
+    .li-produtos {
+        width: 15%;
+    }
+    .li-cadastro {
+        width: 23%;
     }
 }
 
 @media (max-width: 1920px) {
     header ul {
-        border: solid green;
         width: 60%;
-    }
-    header ul li {
-        border: solid blue;
     }
     .li-dicas {
         width: 9%;
@@ -147,13 +236,58 @@ header input::placeholder {
     }
 }
 
+@media (max-width:1850px){
+    header ul {
+        width: 60%;
+    }
+    header ul li {
+        font-size: 25px;
+    }
+    header input {
+        height: 40px;
+    }
+    .dicas-crespos {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width:1550px){
+    header ul li {
+        font-size: 20px;
+    }
+    header ul {
+        width: 55%;
+    }
+    .logo img {
+        width: 6.05vw;
+        height: 6.00vh;
+    }
+    .li-cadastro {
+        width: 18%;
+    }
+    .li-cronograma {
+        width: 30%;
+    }
+    .li-referencia {
+        width: 20%;
+    }
+    .li-produtos {
+        width: 15%;
+    }
+    .dicas-crespos{
+        margin-bottom: 9.5vh;
+    }
+}
+
+
+
 @media (max-width:1440px){
     header {
         width: 100%;
     }
     .logo img {
-        width: 138px;
-        height: 68px;
+        width: 6.46vw;
+        height: 6.5vh;
     }
     header ul li {
         font-size: 20px;
@@ -183,16 +317,54 @@ header input::placeholder {
         width: 10%;
     }
     header input {
-        width: 150px;
+        width: 10.03vw;
+    }
+    header input::placeholder {
+        font-size: 20px;
     }
     .redes-sociais img {
-        height: 60px;
-        width: 40px;
+        height: 6.7vh;
+        width: 2.8vw;
     }
 }
+
+@media (max-width: 1300px) {
+    header ul {
+        width: 65%;
+    }
+    .li-cronograma {
+        width: 19vw;
+    }
+    .li-produtos {
+        width: 12%;
+    }
+    .li-cadastro {
+        width: 11vw;
+    }
+    .li-referencia {
+        width: 10vw;
+    }
+    header input {
+        width: 12.03vw;
+    }
+    .dicas-crespos{
+        margin-bottom: 15.5vh;
+    }
+
+}
+
+@media (max-width:1150px) {
+    header ul li {
+        font-size: 15px;
+    }
+}
+
 @media (max-width:1060px) {
     header ul li {
         font-size: 12px;
+    }
+    .dicas-crespos{
+        margin-bottom: 30.5vh;
     }
 }
 
@@ -201,36 +373,41 @@ header input::placeholder {
         font-size: 14px;
     }
     header input {
-        width: 110px;
+        width: 12vw;
         font-size: 15px;
-        height: 40px;
+        height: 3.8vh;
+        background-size: 15px;
     }
     .redes-sociais {
         width: 12%;
     }
     .redes-sociais img {
-        height: 50px;
-        width: 30px;
+        height: 6vh;
+        width: 3vw;
     }
     .logo img {
-        width: 111px;
-        height: 55px;
+        width: 8vw;
+        height: 5.2vh;
     }
 }
 @media (max-width:910px) {
     .logo img {
-        width: 81px;
-        height: 40px;
+        width: 7.6vw;
+        height: 3.8vh;
     }
     header ul {
         width: 60%;
     }
     header ul li {
         font-size: 12px;
-        border: solid;
     }
     header input {
         width: 100px;
+        
+    }
+
+    header input::placeholder {
+        font-size: 13px;
     }
     .li-dicas {
         width: 9%;
@@ -252,22 +429,28 @@ header input::placeholder {
     }
     .redes-sociais {
         width: 15%;
-        border: solid;
+    }
+    .dicas-crespos{
+        margin-bottom: 35.5vh;
     }
 }
 @media (max-width:768px) {
     header {    
         justify-content: space-between;
-        height: 60px;
+        height: 5.8vh;
     }
     .menu {
-        height: 60px;
+        height: 5.8vh;
         display: flex;
     }
     .logo {
         width: 92%;
         display: flex;
         justify-content: center;
+    }
+    .logo img {
+        width: 16%;
+        height: 100%;
     }
     header ul {
         display: none;
@@ -278,12 +461,40 @@ header input::placeholder {
     .redes-sociais {
         display: none;
     }
+    .dicas {
+        background-image: url("assets/responsivo-mobile/main/dicas-e-truques/cabeludo.png");
+        justify-content: center;
+        height: 730px;
+        border: solid;
+    }
+    .dicas-crespos{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        width: 90%;
+        height: 70%;
+    }
+    h1 {
+        font-size: 100px;
+        width: 23vw;
+    }
+    .dicas-crespos h2{
+        font-size: 3rem;
+        width: 82.1vw;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width:500px){
+    .logo img {
+        width: 25%;
+    }
 }
 
 @media (max-width:425px) {
     header {
         justify-content: space-between;
-        height: 60px;
+        height: 5.8vh;
     }
     header ul {
         display: none;
@@ -299,8 +510,23 @@ header input::placeholder {
         display: flex;
         justify-content: center;
     }
+    .logo img {
+        width: 25%;
+    }
     .menu {
         display:flex;
-        height: 60px;
+        height: 5.8vh;
+    }
+}
+@media (max-width:375px) {
+    .logo img {
+        width: 30%;
+    }
+
+}
+
+@media (max-width:320px) {
+    .logo img {
+        width: 30%;
     }
 }
