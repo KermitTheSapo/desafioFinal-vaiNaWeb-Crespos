@@ -101,20 +101,13 @@ header input::placeholder {
 .dicas {
     background-image: url("assets/main/dicas-e-truques/cabeludo.png");
     background-repeat: no-repeat;
-    background-size: 100%;
-    width: 100%; 
-    height: 81.4vh;
-    display: flex;
-}
-
-.dicas-crespos {
+    background-size: 100% 100%;
+    width: 100%;
+    height: 46vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-direction: row;
-    width: 100%;
     color: white;
-    margin-top: 200px;
 }
 
 h1 {
@@ -124,10 +117,37 @@ h1 {
     font-family: 'Playfair Display', serif;
 }
  
-.dicas-crespos h2 {
+.dicas h2 {
     font-size: 2.3vw;
     width: 28.12vw;
     font-weight: 200;
+}
+
+.passos {
+    background-color: #9767A9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 28.7vh;
+}
+
+.passos h3{
+    font-size: 2.3vw;
+    width: 33%;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    height: 90%;
+}
+
+.passos .paragrafrodesktop {
+    font-size: 1.17vw;
+    width: 35%;
+    height: 70%;
+}
+
+.paragrafomobile {
+    display: none;
 }
 
 @media (max-width:2560px) {
@@ -181,6 +201,9 @@ h1 {
         height: 7.6vh;
         width: 2.8vw;
     }
+    .dicas {
+        height: 65vh;
+    }
 }
 
 @media (max-width:2400px){
@@ -217,8 +240,6 @@ h1 {
 }
 
 @media (max-width:2200px){
-    .li-cronograma {
-    }
     .li-referencia {
         width: 12%;
     }
@@ -287,9 +308,6 @@ h1 {
     header input {
         height: 40px;
     }
-    .dicas-crespos {
-        margin-top: 0px;
-    }
     header nav ul {
         width: 100%;
     }
@@ -333,10 +351,6 @@ h1 {
     header nav ul li {
         font-size: 20px;
     }
-    .dicas-crespos{
-        margin-bottom: 9.5vh;
-    }
-    
 }
 
 
@@ -389,6 +403,9 @@ h1 {
         height: 6.7vh;
         width: 2.8vw;
     }
+    .dicas {
+        height: 55vh;
+    }
 }
 
 @media (max-width: 1300px) {
@@ -421,9 +438,6 @@ h1 {
     }
     header nav ul li {
         font-size: 15px;
-    }
-    .dicas-crespos{
-        margin-bottom: 15.5vh;
     }
     .redes-sociais img {
         height: 5.0vh;
@@ -566,22 +580,47 @@ h1 {
         background-image: url("assets/responsivo-mobile/main/dicas-e-truques/cabeludo.png");
         justify-content: center;
         height: 86vh;
-    }
-    .dicas-crespos{
         flex-direction: column;
         align-items: flex-start;
-        justify-content: space-evenly;
-        width: 90%;
-        height: 70%;
+        justify-content: center;
+        width: 100%;
     }
+
     h1 {
-        font-size: 15vw;
+        font-size: 13vw;
         width: 59vw;
+        margin-left: 50px;
+        margin-bottom: 40px;
     }
-    .dicas-crespos h2{
-        font-size: 7vw;
-        width: 82.1vw;
+    .dicas h2{
+        font-size: 5vw;
+        width: 60vw;
         justify-content: space-evenly;
+        margin-left: 50px;
+    }
+    .passos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+    }
+    .passos h3 {
+        width: 85%;
+        border: solid;
+        font-size: 45px;
+        height: auto;
+    }
+    .paragrafodesktop{
+        display: none;
+    }
+    .paragrafomobile{
+        display: flex;
+    }
+    .passos p {
+        width: 85%;
+        font-size: 20px;
+        border: solid;
     }
 }
 
@@ -617,7 +656,10 @@ h1 {
         display:flex;
         height: 5.8vh;
     }
-    .dicas-crespos h2{
+    .dicas{
+        height: 56vh;
+    }
+    .dicas h2{
         font-size: 7vw;
         width: 82.1vw;
         justify-content: space-evenly;
@@ -628,8 +670,15 @@ h1 {
     .logo img {
         width: 30%;
     }
-    .dicas-crespos h2{
-        margin-bottom: 200px;
+    h1 {
+        margin-left: 20px;
+    }
+    .dicas{
+        height: 46vh;
+    }
+    .dicas h2{
+        margin-bottom: 100px;
+        margin-left: 20px;
     }
 }
 
@@ -637,7 +686,15 @@ h1 {
     .logo img {
         width: 30%;
     }
-    .dicas-crespos h2{
-        margin-bottom: 300px;
+    .dicas {
+        height: 36vh;
+    }
+    h1 {
+        margin-bottom: 20px;
+    }
+    .dicas h2{
+        margin-bottom: 100px;
+        width: 60%;
+        font-size: 15px;
     }
 }
