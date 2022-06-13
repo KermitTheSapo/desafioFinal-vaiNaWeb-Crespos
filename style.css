@@ -27,7 +27,7 @@ header {
 .menu {
     display: none;
 }
-header ul {
+header nav ul {
     display: flex;
     justify-content: space-evenly;
     width: 50%;
@@ -40,7 +40,7 @@ header ul {
 }
 
 
-header ul li{
+header nav ul li{
     font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: center;
@@ -65,8 +65,12 @@ header ul li{
     width: 7%;
 }
 
-header ul li:hover {
+header nav ul li:hover {
     font-weight: bolder;
+}
+
+header nav ul {
+    width: 100%;
 }
 
 header input {
@@ -136,16 +140,22 @@ h1 {
         height: 8.14vh;
     }
     header {
-        height: 11.5vh;
+        height: 9vh;
     }
-    header ul li {
+    header nav ul {
+        width: 100%;
+    }
+    nav {
+        width: 50%;
+    }
+    header nav ul li {
         font-size: 30px;
     }
     .li-dicas {
         width: 7%;
     }
     .li-cronograma {
-        width: 26%;
+        width: 28%;
     }
     .li-referencia {
         width: 15%;
@@ -178,70 +188,101 @@ h1 {
         width: 9%;
     }
     .li-cronograma {
-        width: 30%;
+        width: 20%;
     }
     .li-referencia {
-        width: 18%;
+        width: 15%;
     }
     .li-produtos {
         width: 12%;
     }
     .li-cadastro {
-        width: 20%;
+        width: 12%;
     }
     .li-contato {
         width: 12%;
     }
-    header ul {
+    header nav ul {
         width: 60%;
+    }
+    header nav ul {
+        width: 100%;
+    }
+    nav {
+        width: 50%;
+    }
+    header nav ul li {
+        font-size: 20px;
     }
 }
 
 @media (max-width:2200px){
     .li-cronograma {
-        width: 35%;
     }
     .li-referencia {
-        width: 20%;
+        width: 12%;
     }
     .li-produtos {
         width: 15%;
     }
     .li-cadastro {
-        width: 23%;
+        width: 14%;
     }
 }
 
 @media (max-width: 1920px) {
-    header ul {
+    header nav ul {
         width: 60%;
     }
     .li-dicas {
         width: 9%;
     }
     .li-cronograma {
-        width: 34%;
+        width: 24%;
     }
     .li-referencia {
-        width: 19%;
+        width: 14%;
     }
     .li-produtos {
-        width: 16%;
+        width: 12%;
     }
     .li-cadastro {
-        width: 27%;
+        width: 14%;
     }
     .li-contato {
         width: 14%;
     }
+    header nav ul {
+        width: 100%;
+    }
+    nav {
+        width: 50%;
+    }
 }
-
 @media (max-width:1850px){
-    header ul {
+    header nav ul {
         width: 60%;
     }
-    header ul li {
+    header nav ul li {
         font-size: 25px;
+    }
+    .li-dicas {
+        width: 9%;
+    }
+    .li-cronograma {
+        width: 29%;
+    }
+    .li-referencia {
+        width: 14%;
+    }
+    .li-produtos {
+        width: 12%;
+    }
+    .li-cadastro {
+        width: 17%;
+    }
+    .li-contato {
+        width: 14%;
     }
     header input {
         height: 40px;
@@ -249,13 +290,22 @@ h1 {
     .dicas-crespos {
         margin-top: 0px;
     }
+    header nav ul {
+        width: 100%;
+    }
+    nav {
+        width: 50%;
+    }
+    header nav ul li {
+        font-size: 20px;
+    }
 }
 
 @media (max-width:1550px){
-    header ul li {
+    header nav ul li {
         font-size: 20px;
     }
-    header ul {
+    header nav ul {
         width: 55%;
     }
     .logo img {
@@ -263,10 +313,10 @@ h1 {
         height: 6.00vh;
     }
     .li-cadastro {
-        width: 18%;
+        width: 20%;
     }
     .li-cronograma {
-        width: 30%;
+        width: 32%;
     }
     .li-referencia {
         width: 20%;
@@ -274,9 +324,19 @@ h1 {
     .li-produtos {
         width: 15%;
     }
+    header nav ul {
+        width: 100%;
+    }
+    nav {
+        width: 50%;
+    }
+    header nav ul li {
+        font-size: 20px;
+    }
     .dicas-crespos{
         margin-bottom: 9.5vh;
     }
+    
 }
 
 
@@ -289,17 +349,20 @@ h1 {
         width: 6.46vw;
         height: 6.5vh;
     }
-    header ul li {
+    header nav ul li {
         font-size: 20px;
     }
-    header ul {
-        width: 55%;
+    header nav ul {
+        width: 100%;
+    }
+    nav {
+        width: 60%;
     }
     .li-dicas {
         width: 9%;
     }
     .li-cronograma {
-        width: 31%;
+        width: 30%;
     }
     .li-referencia {
         width: 17%;
@@ -308,7 +371,7 @@ h1 {
         width: 15%;
     }
     .li-cadastro {
-        width: 21%;
+        width: 18%;
     }
     .li-contato {
         width: 12%;
@@ -329,47 +392,72 @@ h1 {
 }
 
 @media (max-width: 1300px) {
-    header ul {
+    header nav ul {
         width: 65%;
     }
     .li-cronograma {
-        width: 19vw;
+        width: 15vw;
     }
     .li-produtos {
         width: 12%;
     }
     .li-cadastro {
-        width: 11vw;
+        width: 9vw;
     }
     .li-referencia {
         width: 10vw;
     }
+    .li-contato{
+        width: 6vw;
+    }
     header input {
         width: 12.03vw;
     }
+    header nav ul {
+        width: 100%;
+    }
+    nav {
+        width: 50%;
+    }
+    header nav ul li {
+        font-size: 15px;
+    }
     .dicas-crespos{
         margin-bottom: 15.5vh;
+    }
+    .redes-sociais img {
+        height: 5.0vh;
+        width: 2.8vw;
     }
 
 }
 
 @media (max-width:1150px) {
-    header ul li {
+    header nav ul li {
         font-size: 15px;
+    }
+    .dicas-crespos{
+        margin-bottom: 40vh;
+    }    
+    .li-cronograma {
+        width: 18vw;
+    }
+    .li-cadastro {
+        width: 12vw;
     }
 }
 
 @media (max-width:1060px) {
-    header ul li {
+    header nav ul li {
         font-size: 12px;
     }
     .dicas-crespos{
-        margin-bottom: 30.5vh;
+        margin-bottom: 40.5vh;
     }
 }
 
 @media (max-width:1024px) {
-    header ul li {
+    header nav ul li {
         font-size: 14px;
     }
     header input {
@@ -377,6 +465,15 @@ h1 {
         font-size: 15px;
         height: 3.8vh;
         background-size: 15px;
+    }
+    header input::placeholder {
+        font-size: 15px;
+    }
+    header nav ul {
+        width: 100%;
+    }
+    nav {
+        width: 60%;
     }
     .redes-sociais {
         width: 12%;
@@ -389,6 +486,7 @@ h1 {
         width: 8vw;
         height: 5.2vh;
     }
+    
 }
 @media (max-width:910px) {
     .logo img {
@@ -398,7 +496,7 @@ h1 {
     header ul {
         width: 60%;
     }
-    header ul li {
+    header nav ul li {
         font-size: 12px;
     }
     header input {
@@ -431,7 +529,7 @@ h1 {
         width: 15%;
     }
     .dicas-crespos{
-        margin-bottom: 35.5vh;
+        margin-bottom: 45.5vh;
     }
 }
 @media (max-width:768px) {
@@ -449,10 +547,13 @@ h1 {
         justify-content: center;
     }
     .logo img {
-        width: 16%;
+        width: 13%;
         height: 100%;
     }
-    header ul {
+    nav {
+        display: none;
+    }
+    header nav ul {
         display: none;
     }
     header input {
@@ -464,8 +565,7 @@ h1 {
     .dicas {
         background-image: url("assets/responsivo-mobile/main/dicas-e-truques/cabeludo.png");
         justify-content: center;
-        height: 730px;
-        border: solid;
+        height: 86vh;
     }
     .dicas-crespos{
         flex-direction: column;
@@ -475,11 +575,11 @@ h1 {
         height: 70%;
     }
     h1 {
-        font-size: 100px;
-        width: 23vw;
+        font-size: 15vw;
+        width: 59vw;
     }
     .dicas-crespos h2{
-        font-size: 3rem;
+        font-size: 7vw;
         width: 82.1vw;
         justify-content: space-evenly;
     }
@@ -496,7 +596,7 @@ h1 {
         justify-content: space-between;
         height: 5.8vh;
     }
-    header ul {
+    header nav ul {
         display: none;
     }
     header input{
@@ -517,16 +617,27 @@ h1 {
         display:flex;
         height: 5.8vh;
     }
+    .dicas-crespos h2{
+        font-size: 7vw;
+        width: 82.1vw;
+        justify-content: space-evenly;
+        margin-bottom: 100px;
+    }
 }
 @media (max-width:375px) {
     .logo img {
         width: 30%;
     }
-
+    .dicas-crespos h2{
+        margin-bottom: 200px;
+    }
 }
 
 @media (max-width:320px) {
     .logo img {
         width: 30%;
+    }
+    .dicas-crespos h2{
+        margin-bottom: 300px;
     }
 }
