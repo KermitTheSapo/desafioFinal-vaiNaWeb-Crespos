@@ -12,6 +12,20 @@ font-family: 'Playfair Display', serif;
     font-family: 'Montserrat', sans-serif;
 }
 
+::selection {
+    color: #fff;
+    background-color: #482953c2;
+}
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #371d41;
+}
+
 a {
     text-decoration: none;
 }
@@ -133,15 +147,18 @@ h1 {
 }
 
 .passos h3{
-    font-size: 2.3vw;
-    width: 33%;
+    font-size: 3vw;
+    width: 42%;
     font-family: 'Playfair Display', serif;
     font-weight: 600;
-    height: 90%;
+    height: 100%;
+    margin-right: 2.3vw;
+    line-height: 8vh;
 }
 
-.passos .paragrafrodesktop {
+.passos .paragrafodesktop {
     font-size: 1.17vw;
+    font-weight: 200;
     width: 35%;
     height: 70%;
 }
@@ -278,6 +295,13 @@ h1 {
     }
     nav {
         width: 50%;
+    }
+    .passos .paragrafodesktop {
+        font-size: 1.4vw;
+        width: 40%;
+    }
+    .passos h3 {
+        line-height: 4.5vh;
     }
 }
 @media (max-width:1850px){
@@ -443,6 +467,10 @@ h1 {
         height: 5.0vh;
         width: 2.8vw;
     }
+    .passos .paragrafodesktop {
+        font-size: 1.8vw;
+        width: 40%;
+    }
 
 }
 
@@ -500,7 +528,17 @@ h1 {
         width: 8vw;
         height: 5.2vh;
     }
-    
+    .passos h3 {
+        line-height: 5vh;
+        height: 90%;
+    }
+    .passos .paragrafodesktop{
+        font-size: 1.8vw;
+        border: solid;
+        width: 49%;
+        height: 80%;
+        line-height: 2vh;
+    }
 }
 @media (max-width:910px) {
     .logo img {
@@ -601,15 +639,16 @@ h1 {
     .passos {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
-        height: 500px;
+        height: 47.9vh;
     }
     .passos h3 {
-        width: 85%;
+        width: 82%;
         border: solid;
         font-size: 45px;
         height: auto;
+        margin-right: 0px;
     }
     .paragrafodesktop{
         display: none;
@@ -618,15 +657,28 @@ h1 {
         display: flex;
     }
     .passos p {
-        width: 85%;
-        font-size: 20px;
+        width: 82%;
+        font-size: 25px;
         border: solid;
+        font-weight: 200;
     }
 }
 
 @media (max-width:500px){
     .logo img {
         width: 25%;
+    }
+    .dicas {
+        height: 40vh;
+    }
+    .passos h3 {
+        font-size: 25px;
+        line-height: 40px;
+        width: 85%;
+    }
+    .passos .paragrafomobile {
+        font-size: 4vw;
+        width: 85%;
     }
 }
 
@@ -657,13 +709,23 @@ h1 {
         height: 5.8vh;
     }
     .dicas{
-        height: 56vh;
+        height: 40vh;
     }
     .dicas h2{
         font-size: 7vw;
         width: 82.1vw;
         justify-content: space-evenly;
         margin-bottom: 100px;
+    }
+    .passos {
+        height: 47.9vh;
+    }
+    .passos h3 {
+        font-size: 25px;
+        line-height: 25px;
+    }
+    .passos p {
+        font-size: 15px;
     }
 }
 @media (max-width:375px) {
@@ -674,7 +736,7 @@ h1 {
         margin-left: 20px;
     }
     .dicas{
-        height: 46vh;
+        height: 40vh;
     }
     .dicas h2{
         margin-bottom: 100px;
@@ -696,5 +758,8 @@ h1 {
         margin-bottom: 100px;
         width: 60%;
         font-size: 15px;
+    }
+    .passos h3 {
+        font-size: 18px;
     }
 }
