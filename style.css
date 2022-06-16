@@ -198,6 +198,11 @@ main {
     align-items: center;
 }
 
+.lado-direito img, .lado-esquerdo img {
+    height: 64vh;
+    width: 38vw;
+}
+
 .bloco-roxo-um, .bloco-roxo-dois, .bloco-roxo-tres, .bloco-roxo-quatro, .bloco-roxo-cinco, .bloco-roxo-seis, .bloco-roxo-sete {
     background-color: #9767A9;
     width: 60%;
@@ -228,27 +233,14 @@ main {
     height: 60%;
 }
 
-.bloco-roxo-um{
+.bloco-roxo-um, .bloco-roxo-dois, .bloco-roxo-tres, .bloco-roxo-quatro, .bloco-roxo-cinco, .bloco-roxo-seis, .bloco-roxo-sete {
     height: 38.3vh;
 }
-.bloco-roxo-dois {
-    height: 38.3vh;
+
+.etapasMobile {
+    display: none;
 }
-.bloco-roxo-tres {
-    height: 38.3vh;
-}
-.bloco-roxo-quatro {
-    height: 38.3vh;
-}
-.bloco-roxo-cinco {
-    height: 38.3vh;
-}
-.bloco-roxo-seis {
-    height: 38.3vh;
-}
-.bloco-roxo-sete {
-    height: 38.3vh;
-}
+
 @media (max-width:2560px) {
     .logo {
         display: flex;
@@ -460,7 +452,6 @@ main {
 }
 
 
-
 @media (max-width:1440px){
     header {
         width: 100%;
@@ -553,7 +544,20 @@ main {
         font-size: 1.8vw;
         width: 40%;
     }
-
+    .lado-direito img, .lado-esquerdo img {
+        height: 44vh;
+        width: 38vw;
+    }
+    .bloco-roxo-um, .bloco-roxo-dois, .bloco-roxo-tres, .bloco-roxo-quatro, .bloco-roxo-cinco, .bloco-roxo-seis, .bloco-roxo-sete {
+        height: 28.3vh;
+        bottom: 100px;
+    }
+    .etapas {
+        width: 90%;
+    }
+    .bloco-roxo-um p, .bloco-roxo-dois p, .bloco-roxo-tres p, .bloco-roxo-quatro p, .bloco-roxo-cinco p, .bloco-roxo-seis p, .bloco-roxo-sete p {
+        font-size: 1.1vw;
+    }
 }
 
 @media (max-width:1150px) {
@@ -741,6 +745,61 @@ main {
         font-size: 25px;
         font-weight: 200;
     }
+    .etapas, .lado-direito, .lado-esquerdo, .lado-direito img, .lado-esquerdo img, .bloco-roxo-um, .bloco-roxo-dois, .bloco-roxo-tres, .bloco-roxo-quatro, .bloco-roxo-cinco, .bloco-roxo-seis, .bloco-roxo-sete {
+        display: none;
+    }
+    .etapasMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .bloco-roxo-um-mobile, .bloco-roxo-dois-mobile, .bloco-roxo-tres-mobile, .bloco-roxo-quatro-mobile, .bloco-roxo-cinco-mobile, .bloco-roxo-seis-mobile, .bloco-roxo-sete-mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #9767A9;
+        color: white;
+        height: 80vh;
+        position: relative;
+        bottom: 10px;
+    }
+    .etapasMobile img {
+        width: 80%;
+    }
+    .rainha {
+        position: relative;
+        top: 30px;
+    }
+    .etapasMobile p {
+        width: 75%;
+        font-size: 3.5vw;
+        font-weight: 200;
+    }
+    .etapasMobile h4 {
+        font-size: 4.5vw;
+        width: 75%;
+        font-weight: 600;
+    }
+    .bloco-roxo-tres-mobile{
+        height: 40vh;
+    }
+    .bloco-roxo-quatro-mobile{
+        height: 50vh;
+    }
+    .bloco-roxo-cinco-mobile{
+        height: 60vh;
+    }
+    .bloco-roxo-seis-mobile{
+        height: 40vh;
+    }
+    .bloco-roxo-sete-mobile{
+        height: 40vh;
+    }
+    .linha {
+        height: 50px;
+    }
 }
 
 @media (max-width:500px){
@@ -805,6 +864,27 @@ main {
     }
     .passos p {
         font-size: 15px;
+    }
+    .bloco-roxo-um-mobile, .bloco-roxo-dois-mobile, .bloco-roxo-tres-mobile, .bloco-roxo-quatro-mobile{
+        height: 50vh;
+    }
+    .bloco-roxo-tres-mobile{
+        height: 30vh;
+    }
+    .bloco-roxo-quatro-mobile{
+        height: 30vh;
+    }
+    .bloco-roxo-cinco-mobile{
+        height: 40vh;
+    }
+    .bloco-roxo-seis-mobile{
+        height: 30vh;
+    }
+    .bloco-roxo-sete-mobile{
+        height: 30vh;
+    }
+    .linha {
+        height: 30px;
     }
 }
 @media (max-width:375px) {
