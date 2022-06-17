@@ -308,6 +308,87 @@ main {
     width: 12.1vw;
     height: 56.9vh;
 }
+
+footer {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #9767A9;
+    width: 100%;
+    height: 10.16vh;
+    align-items: center;
+}
+
+.referencia {
+    width: 40%;
+}
+
+.links {
+    display: flex;
+    height: 60%;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+}
+
+.left {
+    display: flex;
+    width: 32%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.left:hover {
+    background-color: #AC95BB;
+    cursor: pointer;
+}
+
+.left p {
+    font-size: 0.93vw;
+    width: 50%;
+    
+}
+
+.top {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.top:hover {
+    background-color: #AC95BB;
+    cursor: pointer;
+}
+
+.top p {
+    font-size: 0.84vw;
+    width: 45%;
+    text-align: center;
+}
+
+.right:hover {
+    background-color: #AC95BB;
+    cursor: pointer;
+}
+
+.right {
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.right p {
+    width: 50%;
+    font-size: 0.84vw;
+}
+
+
+
 @media (max-width:2560px) {
     .logo { 
         display: flex;
@@ -361,6 +442,9 @@ main {
     }
     .dicas {
         height: 65vh;
+    }
+    .right p, .left p, .top p {
+        font-size: 1vw;
     }
 }
 
@@ -691,6 +775,9 @@ main {
         height: 80%;
         line-height: 2vh;
     }
+    .right p, .left p, .top p {
+        font-size: 1.5vw;
+    }
 }
 @media (max-width:910px) {
     .logo img {
@@ -820,6 +907,7 @@ main {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
+        margin-bottom: 5vh;
     }
     .bloco-roxo-um-mobile, .bloco-roxo-dois-mobile, .bloco-roxo-tres-mobile, .bloco-roxo-quatro-mobile, .bloco-roxo-cinco-mobile, .bloco-roxo-seis-mobile, .bloco-roxo-sete-mobile{
         display: flex;
@@ -874,17 +962,50 @@ main {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        height: 1000px;
+        height: 124.6vh;
         width: 80%;
     }
     .linha-um-mobile {
         display: flex;
-        height: 32%;
+        height: 60%;
+        justify-content: space-between;
+    }
+    .direita {
+        display: flex;
+        flex-direction: column;
+        width: 48%;
+        justify-content: flex-start;
+    }
+    .direita-cima {
+        height: 40%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .direita-cima img {
+        width: 48%;
+        height: 98%;
+    }
+
+    .direita-baixo {
+        height: 65%;
+    }
+    .direita-baixo img {
+        width: 100%;
+        height: 97%;
+    }
+    .esquerda {
+        width: 48%;
+        display: flex;
+        align-items: flex-start;
+    }
+    .esquerda img {
+        width: 100%;
+        height: 98%;
     }
     .linha-dois-mobile {
         display: flex;
         justify-content: center;
-        height: 25%;
+        height: 30%;
     }
     .linha-tres-mobile {
         height: 40%;
@@ -916,8 +1037,10 @@ main {
     .divisao-dois {
         width: 50%;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
+        height: 97%;
+        align-self: center;
     }
     .rei-mobile {
         width: 146px;
@@ -1053,6 +1176,9 @@ main {
     .linha {
         height: 30px;
     }
+    .imagens-mobile {
+        height: 90vh;
+    }
 }
 @media (max-width:375px) {
     .logo img {
@@ -1067,6 +1193,9 @@ main {
     .dicas h2{
         margin-bottom: 100px;
         margin-left: 20px;
+    }
+    .imagens-mobile {
+        height: 70vh;
     }
 }
 
