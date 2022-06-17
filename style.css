@@ -10,6 +10,7 @@ font-family: 'Playfair Display', serif;
 * {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 ::selection {
@@ -30,6 +31,13 @@ a {
     text-decoration: none;
 }
 
+img {
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
+    -moz-user-select: none;
+}
+
 header {
     display: flex;
     width: 100%;
@@ -38,9 +46,11 @@ header {
     align-items: center;
     color: #9767A9;
 }
+
 .menu {
     display: none;
 }
+
 header nav ul {
     display: flex;
     justify-content: space-evenly;
@@ -249,7 +259,6 @@ main {
 }
 
 .linha-um, .linha-dois, .linha-tres, .linha-quatro, .linha-cinco {
-    
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
